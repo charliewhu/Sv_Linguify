@@ -19,6 +19,6 @@ test('Creating a new Text', async ({ page }) => {
   // And they see the new text name
   // And they see the new text body
   await expect(page).toHaveURL(/texts\/1/);
-  await page.getByText(name)
-  await page.getByText(body)
+  page.getByText(name)
+  page.getByText(body)
 });
