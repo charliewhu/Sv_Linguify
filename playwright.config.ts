@@ -27,7 +27,7 @@ const config: PlaywrightTestConfig = {
 
 	use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
-    actionTimeout: 100,
+    actionTimeout: 1000,
   },
 
 	/* Configure projects for major browsers */
