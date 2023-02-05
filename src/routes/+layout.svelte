@@ -1,5 +1,5 @@
 <slot />
 
-<style>
-	@import 'https://unpkg.com/@picocss/pico@1.*/css/pico.classless.min.css';
+<style global>
+	@import '@picocss/pico/css/pico.classless.css';
 </style>
