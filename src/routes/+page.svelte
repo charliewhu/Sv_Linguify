@@ -6,6 +6,12 @@
 
 <title>Home</title>
 
-{#each data.texts as text}
-	<p>{text.name}</p>
-{/each}
+<ul data-testid="textList">
+	{#each data.texts as text}
+		<li data-testid="textListItem">
+			<a href={`texts/${text.id}`}>
+				{text.name}
+			</a>
+		</li>
+	{/each}
+</ul>
