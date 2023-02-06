@@ -8,7 +8,5 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 	const response = await fetch(url);
 	const data = await response.json();
 
-	console.log(dev);
-
 	return data;
 };
