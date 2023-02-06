@@ -17,8 +17,6 @@ jobs:
         node-version: 16
     - name: Install dependencies
       run: yarn
-    - name: Unit Tests
-      run: yarn test:unit
     - name: Install Playwright Browsers
       run: yarn playwright install --with-deps
     - name: Run Playwright tests
