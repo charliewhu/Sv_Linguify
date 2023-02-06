@@ -23,6 +23,6 @@ export const actions: Actions = {
 
 		// redirect to slug/id from response
 		const resData = await response.json();
-		throw redirect(303, `/texts/${resData.id}`);
+		throw redirect(302, `/texts/${resData.id}`);
 	}
 };
