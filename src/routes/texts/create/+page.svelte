@@ -4,7 +4,7 @@
 
 <title>New Text</title>
 
-<h1>Add Todo</h1>
+<h1>Add Text</h1>
 
 <section class="container">
 	<form method="POST" use:enhance>
