@@ -4,7 +4,11 @@
 	export let data: PageData;
 </script>
 
-<title>Home</title>
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
+<h1>Home</h1>
 
 <ul data-testid="textList">
 	{#each data.texts as text}

@@ -10,8 +10,10 @@
 	</ul>
 </nav>
 
-<main class="container">
-	<slot />
+<main>
+	<section class="container">
+		<slot />
+	</section>
 </main>
 
 <style global>

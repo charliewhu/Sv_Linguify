@@ -4,7 +4,9 @@
 	export let data: PageData;
 </script>
 
-<title>{data.name}</title>
+<svelte:head>
+	<title>{data.name}</title>
+</svelte:head>
 
 <h1>
 	{data.name}
