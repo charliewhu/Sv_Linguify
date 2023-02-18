@@ -15,12 +15,15 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
+    - uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
     - name: Install dependencies
-      run: yarn
+      run: pnpm install
     - name: Install Playwright Browsers
-      run: yarn playwright install --with-deps
+      run: pnpm playwright install --with-deps
     - name: Run Playwright tests
-      run: yarn test
+      run: pnpm test
     - uses: actions/upload-artifact@v3
       if: always()
       with:
