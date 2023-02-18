@@ -3,7 +3,7 @@ import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
 	webServer: {
-		command: 'yarn dev',
+		command: 'pnpm run dev',
 		port: 5173
 	},
 	testDir: 'tests',
