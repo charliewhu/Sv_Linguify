@@ -7,7 +7,7 @@ on:
     branches: [ main, master ]
 
 jobs:
-  cache-install-test:
+  install-and-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -16,6 +16,8 @@ jobs:
       with:
         node-version: 16
     - uses: pnpm/action-setup@v2
+      with:
+        version: 6.0.2
     - name: Install dependencies
       run: pnpm install
     - name: Install Playwright Browsers
